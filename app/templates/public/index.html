@@ -1,10 +1,15 @@
-$.ajax({
-    url: "refresh.html",
-    type: "post",
-    data: send,
-    dataType: 'json',
-    success: function(data){
-        console.log(data);
-        console.log(data.id);   
-    }
-});
+<hmtl>
+	<head>
+		<charset text ="utf-8">
+        <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/"> -->
+        <!-- <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <!-- <link href="https://getbootstrap.com/docs/5.0/examples/heroes/heroes.css" rel="stylesheet"> -->
+        <script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename='/js/jquery-3.6.0.min.js')}}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css')}}">
+        <script src="{{ url_for('static', filename='js/js.js')}}"></script>
+	</head>
+	<body>
+        <h1>Prueba de Ajax</h1>
+        
+    </body>
+</html>

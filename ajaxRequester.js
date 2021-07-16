@@ -1,5 +1,5 @@
 $.ajax({
-    url: "refresh.html",
+    url: "/ajax",
     type: "post",
     data: send,
     dataType: 'json',
