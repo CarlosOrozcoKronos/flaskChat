@@ -1,15 +1,21 @@
 from app import app
 from flask import render_template
 from refresh import refreshMsg
+from flask import request
+
 
 @app.route("/")
 def index():
     return render_template("public/index.html")
 
-@app.route('/ajax' methods=["GET", "POST"])
+
+@app.route("/ajax", methods=["GET", "POST"])
 def ajax():
     if request.method == "POST":
-        return refreshMsg
+        return refreshMsg()
+    if request.method == "GET":
+        return refreshMsg()
+
 
 @app.route("/about")
 def about():
