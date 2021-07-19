@@ -1,14 +1,5 @@
 import json
 
-# __debug__ = True
-# ddbbDebug = __debug__
-# noLoop = True
-
-# infiniteLoop = True
-
-# while infiniteLoop:
-#     infiniteLoop = not noLoop
-
 
 def refreshMsg():
     # TODO peticion a BBDD
